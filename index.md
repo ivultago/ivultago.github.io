@@ -1,3 +1,2 @@
-Ivultagooo
-<h1> hello </h1>
-<h2> hello world </h2>
+<h1> This will serve as a container for Jaime's website </h1>
+<h2>Ivan T.</h2>
