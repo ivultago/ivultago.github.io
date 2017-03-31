@@ -9,7 +9,7 @@
  <link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic' rel='stylesheet' type='text/css'> 
  <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
  <link href='http://fonts.googleapis.com/css?family=Goudy+Bookletter+1911' rel='stylesheet' type='text/css'>
- <script> type="text/javascript" src="js/slider.js"></script>
+ <script type="text/javascript" src="js/slider.js"></script>
 </head>
 
 <body>
