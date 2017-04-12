@@ -121,7 +121,7 @@ margin: 50px auto;
 /*#snowflakes1 { background: url('../img/snowflakes.png')no-repeat; width: 24px; height: 21px; margin: 0 auto; display: block; position: relative; bottom: -54px; left: -102px; }
 #snowflakes2 { background: url('../img/snowflakes.png')no-repeat; width: 24px; height: 21px; margin: 0 auto; display: block; position: relative; bottom: -33px; right: -100px; } */
 
-#slide1, #slide2{ width: 100%; }
+#slide1, #slide2, #slide3, #slide4, #slide5 { width: 100%; }
 #slide1{
 background:url('../img/slide1.jpg') 50% 0 no-repeat fixed;
 color: #fff;
