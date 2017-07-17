@@ -1,12 +1,12 @@
-var filedata = "";
+var filedata2 = "";
 
 	function myFunction() {	
 		var client = new XMLHttpRequest();
 		client.open('GET', 'myfile.txt');
 		client.onreadystatechange = function() {
-  	  filedata = client.responseText;
+  	  filedata2 = client.responseText;
 		} 
 		client.send();
 	}	
 	
-alert(filedata);
+alert(filedata2);
