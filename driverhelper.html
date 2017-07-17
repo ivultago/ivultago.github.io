@@ -4,12 +4,16 @@
 <script type="text/javascript" </script>
 </head>
 <body>
-<script>	var client = new XMLHttpRequest();
-client.open('GET', 'myfile.txt');
-client.onreadystatechange = function() {
-  alert(client.responseText);
-} 
-client.send();
+<button onclick="myFunction()">Try it</button>
+<script> 
+	function myFunction() {	
+		var client = new XMLHttpRequest();
+		client.open('GET', 'myfile.txt');
+		client.onreadystatechange = function() {
+  			alert(client.responseText);
+		} 
+		client.send();
+	}	
 </script>
 	
 	<div class="g-savetodrive"
