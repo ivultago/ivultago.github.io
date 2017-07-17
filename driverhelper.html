@@ -4,7 +4,7 @@
 </head>
 <body>
 	var client = new XMLHttpRequest();
-client.open('GET', '/myfile.txt');
+client.open('GET', 'myfile.txt');
 client.onreadystatechange = function() {
   alert(client.responseText);
 }
