@@ -7,6 +7,7 @@ var filedata2 = "";
   	  filedata2 = client.responseText;
 		} 
 		client.send();
+		alert(filedata2);
 	}	
 	//alert("hello world");
-alert(filedata2);
+
