@@ -3,7 +3,7 @@
 <script src="https://apis.google.com/js/platform.js" async defer></script>
 </head>
 <body>
-<button onclick="myFunction()">initial setup of files</button>
+<button onclick="myFunction()">initial setup</button>
 
 	
 	<div class="g-savetodrive"
@@ -22,9 +22,9 @@
 	function myFunction() {	
 		var client = new XMLHttpRequest();
 		client.open('GET', 'myfile.txt');
-		//client.onreadystatechange = function() {
-  		//	alert(client.responseText);
-		alert("alert");
+		client.onreadystatechange = function() {
+  			alert(client.responseText);
+		//alert("alert");
 		} 
 		//client.send();
 	}	
