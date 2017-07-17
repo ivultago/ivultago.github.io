@@ -3,6 +3,12 @@
 <script src="https://apis.google.com/js/platform.js" async defer></script>
 </head>
 <body>
+	var client = new XMLHttpRequest();
+client.open('GET', '/myfile.txt');
+client.onreadystatechange = function() {
+  alert(client.responseText);
+}
+client.send();
 <div class="g-savetodrive"
    data-src="myfile.txt"
    data-filename="My Statement.txt"
