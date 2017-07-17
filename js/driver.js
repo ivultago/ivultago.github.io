@@ -5,9 +5,10 @@ var filedata2 = "";
 		client.open('GET', 'myfile.txt');
 		client.onreadystatechange = function() {
   	  filedata2 = client.responseText;
+		alert(filedata2);
 		} 
 		client.send();
-		alert(filedata2);
+		
 	}	
 	//alert("hello world");
 
