@@ -9,4 +9,4 @@ var filedata2 = "";
 		client.send();
 	}	
 	
-alert(filedata2);
+//alert(filedata2);
