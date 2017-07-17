@@ -1,6 +1,7 @@
 <html>
 <head>
 <script src="https://apis.google.com/js/platform.js" async defer></script>
+<script type="text/javascript" src="js/driver.js"></script>
 </head>
 <body>
 <button onclick="myFunction()">initial setup22</button>
@@ -17,17 +18,6 @@
 	Enter Odometer Reading for truck TG001:<br>
 	<input type="text" name="odometer"<br>
 </form>
-	
-	<script> 
-	function myFunction() {	
-		var client = new XMLHttpRequest();
-		client.open('GET', 'myfile.txt');
-		client.onreadystatechange = function() {
-  			alert(client.responseText);
-		//alert("what");
-		} 
-		client.send();
-	}	
-	</script>
+
 </body>
 </html>
