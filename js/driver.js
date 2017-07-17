@@ -5,8 +5,8 @@ var filedata = "";
 		client.open('GET', 'myfile.txt');
 		client.onreadystatechange = function() {
   	  filedata = client.responseText;
-		  alert("ready");
 		} 
 		client.send();
 	}	
 	
+alert(filedata);
