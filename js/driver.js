@@ -8,5 +8,5 @@ var filedata2 = "";
 		} 
 		client.send();
 	}	
-	
+	alert("hello world");
 //alert(filedata2);
