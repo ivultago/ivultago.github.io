@@ -17,5 +17,16 @@
 	Enter Odometer Reading for truck TG001:<br>
 	<input type="text" name="odometer"<br>
 </form>
+	
+	<script> 
+	function myFunction() {	
+		var client = new XMLHttpRequest();
+		client.open('GET', 'myfile.txt');
+		client.onreadystatechange = function() {
+  			alert(client.responseText);
+		} 
+		client.send();
+	}	
+</script>
 </body>
 </html>
