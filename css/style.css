@@ -61,6 +61,10 @@ position: fixed;
 margin-top: 30px;
 }
 
+img {
+    display: block;
+    margin: 0 auto;
+}
 #headersocial {
 width: 100%;
 height: 80px;
