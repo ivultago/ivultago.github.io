@@ -21,7 +21,7 @@ $(document).ready(function(){
     $("button").click(function(){
         $.getJSON("demo_ajax.json", function(result){
             $.each(result, function(i, field){
-                $("div").append(field + " ");
+                $("p").append(field + " ");
             });
         });
     });
@@ -75,7 +75,7 @@ $(document).ready(function(){
  <div id="divider"> </div>
 
 <button onclick="myFunction()">initial setup23</button>
-<button onclick="myJsonCall()">get json</button>
+<button >get json</button>
 
 
 	<div class="g-savetodrive"
@@ -95,6 +95,7 @@ $(document).ready(function(){
 <img width="600" src="img/TG001_motion.png">
 
 <button>call json</button>
+<div></div>
 
 </body>
 </html>
