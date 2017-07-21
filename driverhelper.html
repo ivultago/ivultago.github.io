@@ -19,23 +19,13 @@
 <script>
 $(document).ready(function(){
     $("button").click(function(){
-        $.getJSON("myfile.json", function(result){
+        $.getJSON("demo_ajax.json", function(result){
             $.each(result, function(i, field){
                 $("div").append(field + " ");
             });
         });
     });
 });
-
-$.ajax({
-  dataType: "myfile.json",
-  url: url,
-  data: data,
-  success: success
-
-  
-  
-  });
 </script>
 </head>
 <body>

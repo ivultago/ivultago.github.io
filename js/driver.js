@@ -1,6 +1,6 @@
 var filedata2 = "";
 
-function myJsonCall(){
+/* function myJsonCall(){
 $.getJSON( "myfile.json", function( data ) {
   var items = [];
   $.each( data, function( key, val ) {
@@ -12,7 +12,7 @@ $.getJSON( "myfile.json", function( data ) {
     html: items.join( "" )
   }).appendTo( "body" );
 });
-}
+} */
 
 
 	function myFunction() {	
