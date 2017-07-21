@@ -4,52 +4,75 @@
 <script src="https://apis.google.com/js/api.js"></script>
 <script type="text/javascript" src="js/slider.js"></script>
 <script type="text/javascript" src="js/driver.js"></script>
-<link rel="stylesheet" href="css/tamgonstyle.css"/>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1s/jquery.min.js"></script>
+
+
 <!-- <link rel="stylesheet" href="css/style.css"/>
- --><script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+ -->
+ 
  <link href='http://fonts.googleapis.com/css?family=Wellfleet' rel='stylesheet' type='text/css'>
  <link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic' rel='stylesheet' type='text/css'> 
  <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
  <link href='http://fonts.googleapis.com/css?family=Goudy+Bookletter+1911' rel='stylesheet' type='text/css'>
  
+ 
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $.getJSON("myfile.json", function(result){
+            $.each(result, function(i, field){
+                $("div").append(field + " ");
+            });
+        });
+    });
+});
+
+$.ajax({
+  dataType: "myfile.json",
+  url: url,
+  data: data,
+  success: success
+
+  
+  
+  });
+</script>
 </head>
 <body>
 <!-- HEADER START-->
 <header id="header">
-<div class="content">
+	<div class="content">
 
-<div id="logo">
-<a href=""> Tamgon Group LLC.</a>
-<img src="img/tamgonlogoheader.png">
-<img src="img/tamgonlogo2header.png">
+		<div id="logo">
+			<a href=""> Tamgon Group LLC.</a>
+			<img src="img/tamgonlogoheader.png">
+			<img src="img/tamgonlogo2header.png">
 
-</div>
+		</div>
 
-
-
-<nav id="nav">
- <ul>
- <!-- <li><a href="#slide1" class="active" title="Next Section" >Home</a></li>
- <li><a href="#slide2" title="Next Section">About</a></li>
- <li><a href="#slide3" title="Next Section">Service</a></li>
- <li><a href="#slide4" title="Next Section">Contact Us</a></li>
- <li><a href="#slide5" title="Next Section">Other</a></li> -->
- </ul>
-</nav>
-</div>
+		<nav id="nav">
+		<ul>
+			 <!-- <li><a href="#slide1" class="active" title="Next Section" >Home</a></li>
+			 <li><a href="#slide2" title="Next Section">About</a></li>
+			 <li><a href="#slide3" title="Next Section">Service</a></li>
+			 <li><a href="#slide4" title="Next Section">Contact Us</a></li>
+			 <li><a href="#slide5" title="Next Section">Other</a></li> -->
+		</ul>
+		</nav>
+	</div>
 
 </header>
 
 <header id="headersocial">
-<div class="social">
-<nav id="navsocial">
- <ul>
-<!--  
- <li><a href="http://www.facebook.com"> <img src="img/fb.png"></a></li>
- <li><a href="http://www.facebook.com"> <img src="img/fb.png"></a></li> -->
- </ul>
-</nav>
-</div>
+	<div class="social">
+		<nav id="navsocial">
+		<ul>
+		<!--  
+		 <li><a href="http://www.facebook.com"> <img src="img/fb.png"></a></li>
+		 <li><a href="http://www.facebook.com"> <img src="img/fb.png"></a></li> -->
+		</ul>
+		</nav>
+	</div>
 </header>
 
 <!-- SLIDES START --> 
@@ -62,6 +85,7 @@
  <div id="divider"> </div>
 
 <button onclick="myFunction()">initial setup23</button>
+<button onclick="myJsonCall()">get json</button>
 
 
 	<div class="g-savetodrive"
@@ -80,6 +104,7 @@
 
 <img width="600" src="img/TG001_motion.png">
 
+<button>call json</button>
 
 </body>
 </html>
