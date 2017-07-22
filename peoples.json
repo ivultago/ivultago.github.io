@@ -1,0 +1,21 @@
+{
+"admin": "1",
+"driver":"0",
+"fname": "Victor",
+"lname": "Tamez"
+
+}
+
+{
+"admin": "1",
+"driver":"0",
+"fname": "Ivan",
+"lname": "Tamez"
+}
+
+{
+"admin": "0",
+"driver":"1",
+"fname": "Rodney",
+"lname": "Mclemore"
+}
