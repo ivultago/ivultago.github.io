@@ -1,20 +1,15 @@
-var filedata2 = "";
 
-/* function myJsonCall(){
-$.getJSON( "myfile.json", function( data ) {
-  var items = [];
-  $.each( data, function( key, val ) {
-    items.push( "<li id='" + key + "'>" + val + "</li>" );
-  });
- 
-  $( "<ul/>", {
-    "class": "my-new-list",
-    html: items.join( "" )
-  }).appendTo( "body" );
+$(document).ready(function(){
+    $("button").click(function(){
+        $.getJSON("demo_ajax.json", function(result){
+            $.each(result, function(i, field){
+                $("div").append(field + " ");
+            });
+        });
+    });
 });
-} */
 
-
+var filedata2 = "";
 	function myFunction() {	
 		var client = new XMLHttpRequest();
 		client.open('GET', 'myfile.txt');

@@ -1,11 +1,13 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
 <script src="https://apis.google.com/js/platform.js" async defer></script>
 <script src="https://apis.google.com/js/api.js"></script>
 <script type="text/javascript" src="js/slider.js"></script>
 <script type="text/javascript" src="js/driver.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 <!-- <link rel="stylesheet" href="css/style.css"/>
  -->
@@ -15,18 +17,9 @@
  <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
  <link href='http://fonts.googleapis.com/css?family=Goudy+Bookletter+1911' rel='stylesheet' type='text/css'>
  
+ <meta name="viewport" content="width=device-width, initial-scale=1">
  
-<script>
-$(document).ready(function(){
-    $("button").click(function(){
-        $.getJSON("demo_ajax.json", function(result){
-            $.each(result, function(i, field){
-                $("div").append(field + " ");
-            });
-        });
-    });
-});
-</script>
+
 </head>
 <body>
 <!-- HEADER START-->
@@ -66,22 +59,19 @@ $(document).ready(function(){
 </header>
 
 <!-- SLIDES START --> 
- <div id="slide1">
-
+ <!-- <div id="slide1">
  <div class="content">
  <div id="christmas_tree"> </div>
  <div id="snowflakes1"></div>
  <div id="snowflakes2"></div>
- <div id="divider"> </div>
+ <div id="divider"> </div> -->
 
-
-
-
-	<div class="g-savetodrive"
+<!-- <!-- <div class="g-savetodrive"
    data-src="myfile.txt"
    data-filename="My Statement.txt"
    data-sitename="My Company Name">
-</div>
+</div> --> -->
+
 <h1> TAMGON GROUP</h1>
 	<h2> Driver - Rodney Mcclemore</h2>
 	<h3> Truck TG001</h3>
@@ -94,7 +84,7 @@ $(document).ready(function(){
 <img width="600" src="img/TG001_motion.png">
 
 <button>call json</button>
-<button onclick="myFunction()">initial setup23</button>
+<!-- <button onclick="myFunction()">initial setup23</button>-->
 <button >get json</button>
 <div></div>
 
