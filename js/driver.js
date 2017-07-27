@@ -32,8 +32,10 @@ $(document).ready(function(){
 	 alert(fingerprint);
 
 	 $.getJSON("peoples.json", function(result){
-            $.each(result, function(i, field){
-                $("div").result[i].fingerprint;
+            $.each(result, function(i){
+                alert(result[i].fname);
+				alert(result[i].fingerprint);
+				alert(result[i].driver);
             });
         });
 });
