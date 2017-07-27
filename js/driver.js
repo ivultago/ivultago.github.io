@@ -33,7 +33,7 @@ $(document).ready(function(){
 
 	 $.getJSON("demo_ajax.json", function(result){
             $.each(result, function(i, field){
-                $("p").append(field + " ");
+                $("div").append(field + " ");
             });
         });
 });
