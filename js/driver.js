@@ -1,7 +1,7 @@
 
 $(document).ready(function(){
     $("button").click(function(){
-        $.getJSON("demo_ajax.json", function(result){
+        $.getJSON("peoples.json", function(result){
             $.each(result, function(i, field){
                 $("div").append(field + " ");
             });
