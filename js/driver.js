@@ -33,7 +33,7 @@ $(document).ready(function(){
 
 	 $.getJSON("peoples.json", function(result){
             $.each(result, function(i, field){
-                $("div").append(field + " ");
+                $("div").result[i].fingerprint;
             });
         });
 });
