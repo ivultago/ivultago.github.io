@@ -8,6 +8,7 @@
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script src="https://apis.google.com/js/platform.js" async defer></script>
 <script src="https://apis.google.com/js/api.js"></script>
+<script type="text/javascript" src="js/client.min.js"></script>
  <link href='http://fonts.googleapis.com/css?family=Wellfleet' rel='stylesheet' type='text/css'>
  <link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic' rel='stylesheet' type='text/css'> 
  <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
@@ -72,10 +73,17 @@
    data-filename="My Statement.txt"
    data-sitename="My Company Name">
 </div> -->
+	<h2> Who are you?</h2>
+	<h2> your fingerprint is...</h2>
+	<script>
+	var client = new ClientJS();
+	var fingerprint = client.getFingerprint();
+	alert(fingerprint);
+	</script>
+	<div id="userloc"></div>
+	<h2> </h2>
+	<div id="vehicleloc></div>
 
-
-	<h2> Driver - Rodney Mcclemore</h2>
-	<h3> Truck TG001</h3>
 
 <form>
 	Enter Odometer Reading for today<br>
