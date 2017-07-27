@@ -73,13 +73,12 @@
    data-filename="My Statement.txt"
    data-sitename="My Company Name">
 </div> -->
-	<h2> Who are you?</h2>
-	<h2> your fingerprint is...</h2>
-	<script>
-	var client = new ClientJS();
-	var fingerprint = client.getFingerprint();
-	alert(fingerprint);
-	</script>
+	<form onsubmit="getfingerprint()">
+	  Who are you? <input type="text" name="user_finger"<br>
+	  <input type="submit">
+	  </form>
+	  
+	 
 	<div id="userloc"></div>
 	<h2> </h2>
 	<div id="vehicleloc></div>

@@ -25,3 +25,10 @@ var filedata2 = "";
 	}	
 	//alert("hello world");
 
+	
+function getFingerprint(){
+	 var client = new ClientJS();
+	 var fingerprint = client.getFingerprint();
+	 alert(fingerprint);
+}
+
