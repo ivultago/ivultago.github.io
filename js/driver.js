@@ -33,9 +33,9 @@ $(document).ready(function(){
 
 	 $.getJSON("peoples.json", function(result){
             $.each(result, function(i){
-                alert(result[i].fname);
-				alert(result[i].fingerprint);
-				alert(result[i].driver);
+                $("div").append(result[i].fname);
+				$("div").append(result[i].fingerprint);
+				$("div").append(result[i].driver);
             });
         });
 });
