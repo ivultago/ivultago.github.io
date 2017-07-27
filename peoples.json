@@ -1,5 +1,6 @@
 {
 "admin": "1",
+"fingerprint": "00",
 "driver":"0",
 "fname": "Victor",
 "lname": "Tamez"
@@ -8,6 +9,7 @@
 
 {
 "admin": "1",
+"fingerprint": "00",
 "driver":"0",
 "fname": "Ivan",
 "lname": "Tamez"
@@ -15,6 +17,7 @@
 
 {
 "admin": "0",
+"fingerprint": "00",
 "driver":"1",
 "fname": "Rodney",
 "lname": "Mclemore"

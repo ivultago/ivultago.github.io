@@ -30,5 +30,11 @@ $(document).ready(function(){
 	 var client = new ClientJS();
 	 var fingerprint = client.getFingerprint();
 	 alert(fingerprint);
+
+	 $.getJSON("demo_ajax.json", function(result){
+            $.each(result, function(i, field){
+                $("p").append(field + " ");
+            });
+        });
 });
 
