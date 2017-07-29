@@ -33,9 +33,12 @@ $(document).ready(function(){
 
 	 $.getJSON("peoples.json", function(result){
             $.each(result, function(i){
+				$("p").append("list of TAMGON GROUP drivers:");
+				if (result[i].driver === "1") then 
                 $("p").append(result[i].fname);
+				$("p").append(" token:");
 				$("p").append(result[i].fingerprint);
-				$("p").append(result[i].driver);
+				
             });
         });
 });
